@@ -1,3 +1,3 @@
 <header>
-  <p>Questo è un header</p>
+  <h1>Questo è un header</h1>
 </header>

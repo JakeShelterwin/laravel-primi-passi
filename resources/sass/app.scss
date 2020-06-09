@@ -6,3 +6,70 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+@mixin flexRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: ivory;
+  @include flexRow;
+  h1 {
+    color: #3490dc;
+  }
+}
+
+main::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  float: left;
+  width: 100px;
+  height: calc(100vh - 120px);
+  background: #3490dc;
+  li:first-child {
+    color: ivory;
+    text-shadow: 2px 1px #180D01;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  a {
+    color: ivory;
+  }
+}
+
+.centralSection{
+  @include flexRow;
+  flex-direction: column;
+  height: calc(100vh - 120px);
+  color: #3490dc;
+  text-align: center;
+  span {
+    text-shadow: 1px 1px ivory;
+    font-size: 30px;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 60px;
+  background-color: ivory;
+  @include flexRow;
+  h1 {
+    color: #3490dc;
+  }
+}

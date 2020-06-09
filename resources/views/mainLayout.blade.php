@@ -5,7 +5,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Laravel, primi passi</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
@@ -15,7 +15,10 @@
     </head>
     <body>
       @include('header')
-      @yield('content')
+      <main>
+        @include('navBar')
+        @yield('content')
+      </main>
       @include('footer')
     </body>
 </html>
